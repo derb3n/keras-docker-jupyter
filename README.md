@@ -1,5 +1,6 @@
 # keras-docker
 just a startingpoint for a keras-docker environment
+all notebooks and files are on your maschine in the jupyter/work folder
 
 ## first steps
 install docker and docker-compose on your maschine
