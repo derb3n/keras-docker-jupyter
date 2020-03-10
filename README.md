@@ -1,5 +1,5 @@
-# keras-docker
-  just a startingpoint for a keras-docker environment
+# keras-docker-jupyter
+  just a startingpoint for a keras-docker-jupyter notebooks environment
   
   all notebooks and files are on your maschine in the jupyter/work folder
 
