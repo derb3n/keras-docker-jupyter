@@ -1,0 +1,14 @@
+version: '3'
+services: 
+    jupyter:
+        container_name: jupyter
+        build:
+            context: ./jupyter/
+        ports:
+            - "9999:8888"
+            - "9998:6006" #tensorboard
+        volumes:
+            - ./jupyter/work:/home/jovyan/work
+        command: >
+            bash -c "start-notebook.sh --NotebookApp.password=sha1:4535a0db84f3:baf5e26ed461a24968da13d42d9a30d6b4f4f6e1 &
+                tensorboard --logdir=~/work/logs/ --port=6006"
